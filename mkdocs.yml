@@ -2,7 +2,7 @@
 site_name: Template Python
 site_description: Documentation for the Template Python Project
 site_author: Mark Quinn
-repo_url: https://github.com/finsite/template_python
+repo_url: https://github.com/finsite/stock-sent-news
 theme:
   name: material
 nav:
