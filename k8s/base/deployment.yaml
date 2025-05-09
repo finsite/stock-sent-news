@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-sent-news
+  labels:
+    app: stock-sent-news
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock-sent-news
+  template:
+    metadata:
+      labels:
+        app: stock-sent-news
+    spec:
+      containers:
+        - name: stock-sent-news
+          image: stock-sent-news:latest
+          ports:
+            - containerPort: 8080
