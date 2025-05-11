@@ -7,6 +7,12 @@
 - Initial project structure cloned from template_python
 - Custom configuration and module setup for `stock-sent-news`
 
+## v0.1.3 (2025-05-11)
+
+### Fix
+
+- **pollers**: Initial repository population of pollers
+
 ## v0.1.2 (2025-05-09)
 
 ### Fix
