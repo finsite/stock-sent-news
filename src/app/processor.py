@@ -1,4 +1,4 @@
-"""Processor module for news sentiment analysis."""
+# """Processor module for news sentiment analysis."""
 
 from typing import Any
 from textblob import TextBlob
@@ -28,7 +28,8 @@ def analyze_sentiment(data: dict[str, Any]) -> dict[str, Any]:
 
     try:
         analysis = TextBlob(content)
-        polarity = analysis.sentiment.polarity
+        sentiment: Any = analysis.sentiment  # ✅ Avoid Pyright complaint
+        polarity = sentiment.polarity
 
         data["sentiment_score"] = polarity
         data["sentiment_label"] = classify_sentiment(polarity)
