@@ -7,6 +7,12 @@
 - Initial project structure cloned from template_python
 - Custom configuration and module setup for `stock-sent-news`
 
+## v0.1.4 (2025-05-12)
+
+### Fix
+
+- **pollers**: verifying imports work
+
 ## v0.1.3 (2025-05-11)
 
 ### Fix
