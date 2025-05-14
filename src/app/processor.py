@@ -1,6 +1,7 @@
 # """Processor module for news sentiment analysis."""
 
 from typing import Any
+
 from textblob import TextBlob
 
 from app.logger import setup_logger
@@ -17,6 +18,7 @@ def analyze_sentiment(data: dict[str, Any]) -> dict[str, Any]:
 
     Returns:
         dict[str, Any]: Original data with 'sentiment_score' and 'sentiment_label' added.
+
     """
     content = data.get("headline") or data.get("content")
 
@@ -52,6 +54,7 @@ def classify_sentiment(score: float) -> str:
 
     Returns:
         str: Sentiment label - 'positive', 'neutral', or 'negative'.
+
     """
     if score > 0.1:
         return "positive"

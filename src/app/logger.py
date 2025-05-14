@@ -15,6 +15,7 @@ def setup_logger(name: str = "app") -> logging.Logger:
 
     Returns:
         logging.Logger: The configured logger instance.
+
     """
     logger: logging.Logger = logging.getLogger(name)
 
