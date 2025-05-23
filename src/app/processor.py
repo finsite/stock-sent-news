@@ -14,9 +14,11 @@ def analyze_sentiment(data: dict[str, Any]) -> dict[str, Any]:
     """Analyzes sentiment of news content.
 
     Args:
+    ----
         data (dict[str, Any]): A dictionary containing at least a 'headline' or 'content' key.
 
     Returns:
+    -------
         dict[str, Any]: Original data with 'sentiment_score' and 'sentiment_label' added.
 
     """
@@ -50,9 +52,11 @@ def classify_sentiment(score: float) -> str:
     """Classifies polarity score into sentiment label.
 
     Args:
+    ----
         score (float): Polarity score from -1 to 1.
 
     Returns:
+    -------
         str: Sentiment label - 'positive', 'neutral', or 'negative'.
 
     """
