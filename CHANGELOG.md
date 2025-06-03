@@ -7,6 +7,12 @@
 - Initial project structure cloned from template_python
 - Custom configuration and module setup for `stock-sent-news`
 
+## v0.2.0 (2025-05-23)
+
+### Feat
+
+- **versioning**: enforce version consistency across pyproject.toml, __init__.py, and changelog
+
 ## v0.1.5 (2025-05-14)
 
 ### Fix
