@@ -25,7 +25,6 @@ def main() -> None:
     applies news sentiment analysis, and publishes the results.
 
 
-    
     """
     logger.info("Starting News Sentiment Analysis Service...")
     consume_messages()
