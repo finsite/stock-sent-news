@@ -20,9 +20,11 @@ logger = setup_logger(__name__)
 
 def main() -> None:
     """Starts the News Sentiment Analysis Service.
-
+    
     This service listens to messages from a queue (RabbitMQ or SQS),
     applies news sentiment analysis, and publishes the results.
+
+
     """
     logger.info("Starting News Sentiment Analysis Service...")
     consume_messages()
